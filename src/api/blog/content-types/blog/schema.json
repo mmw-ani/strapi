@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "title": {
+      "type": "text",
+      "required": true,
+      "minLength": 5
+    },
+    "date": {
+      "type": "date"
+    },
+    "meta_description": {
+      "type": "text",
+      "required": true,
+      "minLength": 1
+    },
+    "isTableOfContentVisible": {
+      "type": "boolean",
+      "default": true
+    },
+    "subcategory": {
+      "type": "enumeration",
+      "enum": [
+        "research",
+        "industry"
+      ]
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section.section",
+      "mappedBy": "blog"
+    }
+  }
+}
