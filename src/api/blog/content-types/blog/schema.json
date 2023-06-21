@@ -46,9 +46,7 @@
       "required": false,
       "allowedTypes": [
         "images",
-        "files",
-        "videos",
-        "audios"
+        "videos"
       ]
     },
     "sections": {
@@ -56,6 +54,11 @@
       "relation": "oneToMany",
       "target": "api::section.section",
       "mappedBy": "blog"
+    },
+    "slug": {
+      "type": "text",
+      "required": true,
+      "unique": true
     }
   }
 }
