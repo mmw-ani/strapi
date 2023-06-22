@@ -19,7 +19,8 @@
     "title": {
       "type": "text",
       "required": true,
-      "minLength": 5
+      "minLength": 5,
+      "unique": true
     },
     "date": {
       "type": "date"
