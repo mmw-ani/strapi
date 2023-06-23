@@ -433,6 +433,7 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
         "Trebuchet MS, Helvetica, sans-serif",
         "Verdana, Geneva, sans-serif",
         "Roboto, Roboto Black, Roboto Medium, Roboto Light, sans-serif",
+        "Inter"
       ],
       supportAllValues: true,
     },
