@@ -433,7 +433,7 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
         "Trebuchet MS, Helvetica, sans-serif",
         "Verdana, Geneva, sans-serif",
         "Roboto, Roboto Black, Roboto Medium, Roboto Light, sans-serif",
-        "Inter"
+        "Inter",
       ],
       supportAllValues: true,
     },
@@ -444,6 +444,18 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
     fontBackgroundColor: {
       columns: 5,
       documentColors: 10,
+    },
+    link: {
+      decorators: {
+        openInNewTab: {
+          mode: "manual",
+          label: "Open in a new tab",
+          attributes: {
+            target: "_blank",
+            rel: "noopener noreferrer",
+          },
+        },
+      },
     },
   },
 };
