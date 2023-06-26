@@ -60,6 +60,12 @@
       "type": "text",
       "required": true,
       "unique": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "blogs"
     }
   }
 }
