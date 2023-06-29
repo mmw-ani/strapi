@@ -19,16 +19,8 @@
     "Body": {
       "type": "richtext"
     },
-    "Blog_title": {
-      "type": "text",
-      "required": true
-    },
     "tableHeading": {
       "type": "text"
-    },
-    "order": {
-      "type": "integer",
-      "required": true
     },
     "blog": {
       "type": "relation",
@@ -43,6 +35,11 @@
         "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
+    },
+    "blog_title": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

@@ -401,6 +401,17 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
         "resizeImage:75",
         "resizeImage:original",
       ],
+      styles: {
+        options: [
+          {
+            name: "side",
+            title: "Mobile View",
+            className: "hidden xl:block",
+          },
+          "block",
+          "inline",
+        ],
+      },
     },
     table: {
       contentToolbar: [
