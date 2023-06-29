@@ -17,18 +17,13 @@
       "default": false
     },
     "title": {
-      "type": "text",
+      "type": "string",
       "required": true,
       "minLength": 5,
       "unique": true
     },
     "date": {
       "type": "date"
-    },
-    "meta_description": {
-      "type": "text",
-      "required": true,
-      "minLength": 1
     },
     "isTableOfContentVisible": {
       "type": "boolean",
