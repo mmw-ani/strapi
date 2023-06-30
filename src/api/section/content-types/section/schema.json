@@ -16,12 +16,6 @@
       "type": "string",
       "required": true
     },
-    "Body": {
-      "type": "richtext"
-    },
-    "tableHeading": {
-      "type": "text"
-    },
     "blog": {
       "type": "relation",
       "relation": "manyToOne",
